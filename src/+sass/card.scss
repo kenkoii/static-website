@@ -1,0 +1,47 @@
+.floating-card{
+    width: 100%;
+    margin: 0px auto;
+    background: #fff;
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.3);
+    padding: 50px 80px;
+    &::after{
+        content: " ";
+        display: block;
+        clear: both;
+    }
+    h1{
+        font-weight: 800;
+        font-size: 60px;
+        color: #AF309F;
+        margin: 70px 0px;
+        letter-spacing: 10px;
+        text-align: center;
+    }
+    h2{  
+        margin: 50px 0px;
+        font-weight: 800;
+        color: #AF309F;
+        text-align: center;
+    }
+    p{
+        color: rgba(0,0,0,0.4);
+        line-height: 30px;
+    }
+}
+
+.profile-card{
+    width: 300px;
+    margin: 70px auto;
+    text-align: center;
+    img{
+        height: auto;
+        width: 150px;
+        margin: 0 auto;
+        display: block;
+    }
+    h5{
+        font-weight: 300;
+        letter-spacing: 3px;
+        color: rgba(0,0,0,0.4);
+    }
+}

@@ -1,0 +1,122 @@
+nav{
+    width: 100%;
+    background: #fff;
+    padding: 20px 0px;
+    position: absolute;
+    top: 0;
+    z-index: 120;
+    .nav-links{
+        width: 1300px;
+        margin: 0 auto;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        &::after{
+            content: " ";
+            display: block;
+            clear: both;
+        }
+        li{
+            flex-grow: 1;
+            display: inline-block;
+            width: 15%;
+            float: left;
+            padding: 0 30px;
+            text-align: center;
+            a{
+                font-weight: 700;
+                letter-spacing: 3px;
+                text-decoration: none;
+            }
+            &:nth-child(1){
+                a{ 
+                    color: #AF309F;
+                }
+            }
+            &:nth-child(2){
+                a{
+                    color: #5176BA;
+                }
+                
+            }
+            &:nth-child(3){
+                a{
+                    color: #50AEB6;
+                }
+            }
+            &:nth-child(4){
+                a{
+                    color: #43B749;
+                }
+            }
+            &:nth-child(5){
+                a{
+                    color: #DEC939; 
+                }
+                
+            }
+            &:nth-child(6){
+                a{
+                    color: #EA4041;
+                }
+            }
+        }
+
+    }
+}
+
+.burger-button{
+    display: none;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: 99999;
+    padding: 10px;
+    height: 50px;
+    width: 50px;
+    background: #fff;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.4);
+    border: 0px;
+    margin: 10px;
+    span{
+        display: block;
+        height: 3px !important;
+        width: 100%;
+        background: #5176BA;
+        margin: 4px 0px;
+    }
+}
+
+@media (max-width: 1300px){
+    .burger-button{
+        display: block;
+    }
+    nav{
+        background: transparent;
+        position: fixed;
+        top: 0;
+        .nav-links{
+            position: fixed;
+            top: 0;
+            right: 300%;
+            display: none;
+            padding: 100px 0px;
+            width: 250px;
+            height: 100vh;
+            background: #fff;
+            box-shadow: 0px 5px 10px rgba(0,0,0,0.4);
+            transition:right 0.3s ease-in-out;
+            &.active{
+                display: block;
+                right: 0px;
+            }
+            li{
+                width: 100%;
+                float: initial;
+                display: block;
+                padding: 30px 0px;
+            }
+        }
+    }
+}
