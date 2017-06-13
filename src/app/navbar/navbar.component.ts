@@ -15,10 +15,10 @@ export class NavbarComponent implements OnInit {
     this.brand = "FRECRE";
     this.image = "assets/img/frecre-logo.png";
     this.links = [
-      {link: "HOME", ref: ""},
-      {link: "PRODUCTS", ref: ""},
-      {link: "BLOG", ref: "https://frecre-blog.firebaseapp.com"},
-      {link: "CONTACT", ref: ""}
+      {link: "HOME", ref: "", type: 1},
+      {link: "PRODUCTS", ref: "/products", type: 1},
+      {link: "BLOG", ref: "https://frecre-blog.firebaseapp.com", type: 2},
+      {link: "CONTACT", ref: "/contact", type: 1}
     ]
   }
 

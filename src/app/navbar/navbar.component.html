@@ -4,6 +4,9 @@
     <a href="#" class="brand-text">{{brand}}</a>
   </div>
   <ul class="links">
-    <li *ngFor="let link of links"><a class="" routerLink="{{link.ref}}">{{link.link}}</a></li>
+    <li *ngFor="let link of links">
+      <a class="" *ngIf="link.type == 1" routerLink="{{link.ref}}">{{link.link}}</a>
+      <a class="" *ngIf="link.type == 2" href="{{link.ref}}">{{link.link}}</a>
+    </li>
   </ul>
 </nav>
